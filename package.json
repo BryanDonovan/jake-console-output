@@ -1,0 +1,18 @@
+{
+  "author": "Bryan Donovan <bdondo@gmail.com>",
+  "name": "jake-console-output",
+  "description": "Code to reproduce issue with jake not preserving output in mocha and buster tests.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:BryanDonovan/jake-console-output.git"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "1.8.1"
+  }
+}
