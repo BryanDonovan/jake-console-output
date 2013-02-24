@@ -1,7 +1,7 @@
 var print_opts = {printStdout: true, printStderr: true};
 
 desc('Run all tasks');
-task('default', ['console-log', 'test'], {async: true}, complete);
+task('default', ['console-log', 'test', 'test-run'], {async: true}, complete);
 
 desc('console.log with color and symbol');
 task('console-log', {async: true}, function(args) {
@@ -26,7 +26,7 @@ function run_tests(cb) {
     });
 }
 
-desc('mocha unit test-run example');
+desc('mocha test example run in same process');
 task('test-run', {async: true}, function(args) {
     run_tests(function(err) {
         if (err) {
